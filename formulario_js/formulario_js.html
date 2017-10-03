@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Password + Email</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/formulario_js/">
+</head>
+<body>
+<form>
+  <div class="container">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="usuario" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="password" placeholder="Password">
+  </div>
+  <button type="submit" id="boton" class="btn btn-default">Enviar</button>
+  </form>
+  </div>
+	
+</body>
+ <script type="text/javascript">
+	let intentos = 0;
+ 	document.querySelector('#boton').addEventListener('click', (e) => {
+ 		e.preventDefault();
+
+ 		const usuario = document.querySelector('#usuario').value;
+ 		const password = document.querySelector('#password').value;
+
+ 		// Empieza Codigo
+
+ 		if((usuario !="agottert@gmail.com" && password != "mago2017") && intentos <=3)
+ 			{
+ 				alert("Error")
+ 				intentos=intentos +1
+ 			}
+ 			else {alert("Bienvenido")}
+     
+        if (intentos==3) {alert("bloqueado")}
+        
+ 		// Termina Codigo
+ 	});
+ </script>
+</html>
