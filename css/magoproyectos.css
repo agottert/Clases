@@ -24,7 +24,42 @@ font-family: "Work Sans";
          
          
          }
-         
+
+@media (max-width:799px){ 
+   .links{display: flex;
+          flex-direction: column;
+          align-items: center;
+          }
+   .links a{ padding: 0px 10px;
+            margin:10px 0px; 
+
+         }
+   a{white-space: inherit;}
+}
+@media (max-width:599px){ 
+   .links{display: flex;
+          flex-direction: column;
+          align-items: center;
+          }
+   .links a{ padding: 0px 10px;
+            margin:10px 0px; 
+
+         }
+   a{white-space: inherit;}
+
+}
+@media (max-width:479px){ 
+   .links{display: flex;
+          flex-direction: column;
+          align-items: center;
+          }
+   .links a{ padding: 0px 10px;
+            margin:10px 0px; 
+
+         }
+   a{white-space: inherit;}
+
+}
         
 
 
